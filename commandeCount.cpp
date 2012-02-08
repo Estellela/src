@@ -1,31 +1,31 @@
 /*************************************************************************
                            CommandeCount  -  description
                              -------------------
-    début                : 5 fŽvr. 2012
+    dï¿½but                : 5 fï¿½vr. 2012
     copyright            : (C) 2012 par sylvain
 *************************************************************************/
 
-//---------- Réalisation de la classe <CommandeCount> (fichier CommandeCount.cpp) -------
+//---------- Rï¿½alisation de la classe <CommandeCount> (fichier CommandeCount.cpp) -------
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include système
+//-------------------------------------------------------- Include systï¿½me
 using namespace std;
 #include <iostream>
 
 //------------------------------------------------------ Include personnel
-#include "CommandeCount.h"
+#include "commandeCount.h"
 
 //------------------------------------------------------------- Constantes
 
 //----------------------------------------------------------------- PUBLIC
 
-//----------------------------------------------------- Méthodes publiques
-// type CommandeCount::Méthode ( liste des paramètres )
+//----------------------------------------------------- Mï¿½thodes publiques
+// type CommandeCount::Mï¿½thode ( liste des paramï¿½tres )
 // Algorithme :
 //
 //{
-//} //----- Fin de Méthode
+//} //----- Fin de Mï¿½thode
 void CommandeCount::Do ()
 {
 	long nbObjet = 0;
@@ -42,11 +42,11 @@ void CommandeCount::Do ()
 }
 void CommandeCount::Undo ()
 {
-// Rien ˆ faire
+// Rien ï¿½ faire
 }
 
 
-//------------------------------------------------- Surcharge d'opérateurs
+//------------------------------------------------- Surcharge d'opï¿½rateurs
 CommandeCount & CommandeCount::operator = ( const CommandeCount & unCommandeCount )
 // Algorithme :
 //
@@ -90,5 +90,5 @@ CommandeCount::~CommandeCount ( )
 
 //------------------------------------------------------------------ PRIVE
 
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- Mï¿½thodes protï¿½gï¿½es
 

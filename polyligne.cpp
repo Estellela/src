@@ -42,7 +42,7 @@ polyligne & polyligne::operator = ( const polyligne & unpolyligne )
 
 
 //-------------------------------------------- Constructeurs - destructeur
-polyligne::polyligne ( const polyligne & unpolyligne )
+polyligne::polyligne ( const polyligne & unpolyligne ) : ElementGeometrique(unpolyligne)
 // Algorithme :
 //
 {
@@ -52,7 +52,7 @@ polyligne::polyligne ( const polyligne & unpolyligne )
 } //----- Fin de polyligne (constructeur de copie)
 
 
-polyligne::polyligne ( )
+polyligne::polyligne ( ) : ElementGeometrique()
 // Algorithme :
 //
 {

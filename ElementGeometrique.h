@@ -1,7 +1,7 @@
 /*************************************************************************
                            ElementGeometrique  -  description
                              -------------------
-    début                : 2 fŽvr. 2012
+    dï¿½but                : 2 fï¿½vr. 2012
     copyright            : (C) 2012 par sylvain
 *************************************************************************/
 
@@ -9,14 +9,15 @@
 #if ! defined ( ELEMENTGEOMETRIQUE_H_ )
 #define ELEMENTGEOMETRIQUE_H_
 
-//--------------------------------------------------- Interfaces utilisées
-
+//--------------------------------------------------- Interfaces utilisï¿½es
+#include <string>
+#include"rectangle.h"
 //------------------------------------------------------------- Constantes 
 
 //------------------------------------------------------------------ Types 
 
 //------------------------------------------------------------------------ 
-// Rôle de la classe <ElementGeometrique>
+// Rï¿½le de la classe <ElementGeometrique>
 //
 //
 //------------------------------------------------------------------------ 
@@ -25,18 +26,30 @@ class ElementGeometrique
 {
 //----------------------------------------------------------------- PUBLIC
 
-//TODO lui ajouter les mŽthodes appartient et translater en virtual, rendre la classe abstract
+//TODO lui ajouter les mï¿½thodes appartient et translater en virtual, rendre la classe abstract
 
 public:
-//----------------------------------------------------- Méthodes publiques
-    // type Méthode ( liste des paramètres );
+//----------------------------------------------------- Mï¿½thodes publiques
+    // type Mï¿½thode ( liste des paramï¿½tres );
+    // Mode d'emploi :
+    //
+    // Contrat :
+    //
+
+	virtual bool Appartient(rectangle *selection);
+	// Mode d'emploi :
+	//
+	// Contrat :
+	//
+
+	virtual void Translater ( long deltaX, long deltaY );
     // Mode d'emploi :
     //
     // Contrat :
     //
 
 
-//------------------------------------------------- Surcharge d'opérateurs
+//------------------------------------------------- Surcharge d'opï¿½rateurs
     ElementGeometrique & operator = ( const ElementGeometrique & unElementGeometrique );
     // Mode d'emploi :
     //
@@ -57,6 +70,7 @@ public:
     // Contrat :
     //
 
+
     virtual ~ElementGeometrique ( );
     // Mode d'emploi :
     //
@@ -66,13 +80,13 @@ public:
 //------------------------------------------------------------------ PRIVE 
 
 protected:
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- Mï¿½thodes protï¿½gï¿½es
 
-//----------------------------------------------------- Attributs protégés
-
+//----------------------------------------------------- Attributs protï¿½gï¿½s
+    string m_commandeEntree;
 };
 
-//--------------------------- Autres définitions dépendantes de <ElementGeometrique>
+//--------------------------- Autres dï¿½finitions dï¿½pendantes de <ElementGeometrique>
 
 #endif // ELEMENTGEOMETRIQUE_H_
 

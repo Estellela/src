@@ -1,37 +1,37 @@
 /*************************************************************************
                            Commande  -  description
                              -------------------
-    début                : 1 fŽvr. 2012
+    dï¿½but                : 1 fï¿½vr. 2012
     copyright            : (C) 2012 par sylvain
 *************************************************************************/
 
-//---------- Réalisation de la classe <Commande> (fichier Commande.cpp) -------
+//---------- Rï¿½alisation de la classe <Commande> (fichier Commande.cpp) -------
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include système
+//-------------------------------------------------------- Include systï¿½me
 using namespace std;
 #include <iostream>
 
 //------------------------------------------------------ Include personnel
-#include "Commande.h"
+#include "commande.h"
 
 //------------------------------------------------------------- Constantes
 
 //----------------------------------------------------------------- PUBLIC
 
-//----------------------------------------------------- Méthodes publiques
-// type Commande::Méthode ( liste des paramètres )
+//----------------------------------------------------- Mï¿½thodes publiques
+// type Commande::Mï¿½thode ( liste des paramï¿½tres )
 // Algorithme :
 //
 //{
-//} //----- Fin de Méthode
+//} //----- Fin de Mï¿½thode
 ModeleGeometrique* Commande::getListElementGeometriqueDeLaCommande ()
 {
 	return listElementGeometriqueDeLaCommande;
 }
 
-//------------------------------------------------- Surcharge d'opérateurs
+//------------------------------------------------- Surcharge d'opï¿½rateurs
 Commande & Commande::operator = ( const Commande & unCommande )
 // Algorithme :
 //
@@ -75,5 +75,5 @@ Commande::~Commande ( )
 
 //------------------------------------------------------------------ PRIVE
 
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- Mï¿½thodes protï¿½gï¿½es
 

@@ -1,32 +1,32 @@
 /*************************************************************************
                            CommandeLigne  -  description
                              -------------------
-    début                : 1 fŽvr. 2012
+    dï¿½but                : 1 fï¿½vr. 2012
     copyright            : (C) 2012 par sylvain
 *************************************************************************/
 
-//---------- Réalisation de la classe <CommandeLigne> (fichier CommandeLigne.cpp) -------
+//---------- Rï¿½alisation de la classe <CommandeLigne> (fichier CommandeLigne.cpp) -------
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include système
+//-------------------------------------------------------- Include systï¿½me
 using namespace std;
 #include <iostream>
 
 //------------------------------------------------------ Include personnel
-#include "CommandeLigne.h"
+#include "commandeLigne.h"
 #include "ligne.h"
 
 //------------------------------------------------------------- Constantes
 
 //----------------------------------------------------------------- PUBLIC
 
-//----------------------------------------------------- Méthodes publiques
-// type CommandeLigne::Méthode ( liste des paramètres )
+//----------------------------------------------------- Mï¿½thodes publiques
+// type CommandeLigne::Mï¿½thode ( liste des paramï¿½tres )
 // Algorithme :
 //
 //{
-//} //----- Fin de Méthode
+//} //----- Fin de Mï¿½thode
 void CommandeLigne::Do ()
 {
 	ligne* objetLigne = new ligne(x, y);
@@ -39,10 +39,10 @@ void CommandeLigne::Do ()
 
 void CommandeLigne::Undo()
 {
-	//TODO supprimer les Žlements de modele geometrique avec la liste element de la commande (erase) puis faire
+	//TODO supprimer les ï¿½lements de modele geometrique avec la liste element de la commande (erase) puis faire
 
 	list<ElementGeometrique*>::iterator it;
-	it = listElementGeometriqueDeLaCommande->getListeElementsGeometrique()->begin(); //TODO vŽrifier qu'on rŽcupre bien le premier
+	it = listElementGeometriqueDeLaCommande->getListeElementsGeometrique()->begin(); //TODO vï¿½rifier qu'on rï¿½cupï¿½re bien le premier
 	modeleElementsGeometrique->SupprimerElementGeometrique(*it);
 
 	listElementGeometriqueDeLaCommande->ClearList();
@@ -54,7 +54,7 @@ void CommandeLigne::Undo()
 
 
 
-//------------------------------------------------- Surcharge d'opérateurs
+//------------------------------------------------- Surcharge d'opï¿½rateurs
 CommandeLigne & CommandeLigne::operator = ( const CommandeLigne & unCommandeLigne )
 // Algorithme :
 //
@@ -101,5 +101,5 @@ CommandeLigne::~CommandeLigne ( )
 
 //------------------------------------------------------------------ PRIVE
 
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- Mï¿½thodes protï¿½gï¿½es
 

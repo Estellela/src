@@ -35,13 +35,13 @@ public:
     // Contrat :
     //
 
-	bool Appartient(rectangle *selection);
+	virtual bool Appartient(rectangle *selection);
 	// Mode d'emploi :
 	//
 	// Contrat :
 	//
 
-	void Translater(long deltaX, long deltaY);
+	virtual void Translater(long deltaX, long deltaY);
 	// Mode d'emploi :
 	//
 	// Contrat :

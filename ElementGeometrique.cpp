@@ -1,34 +1,46 @@
 /*************************************************************************
                            ElementGeometrique  -  description
                              -------------------
-    début                : 2 fŽvr. 2012
+    dï¿½but                : 2 fï¿½vr. 2012
     copyright            : (C) 2012 par sylvain
 *************************************************************************/
 
-//---------- Réalisation de la classe <ElementGeometrique> (fichier ElementGeometrique.cpp) -------
+//---------- Rï¿½alisation de la classe <ElementGeometrique> (fichier ElementGeometrique.cpp) -------
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include système
+//-------------------------------------------------------- Include systï¿½me
 using namespace std;
+#include "ElementGeometrique.h"
+
 #include <iostream>
 
 //------------------------------------------------------ Include personnel
-#include "ElementGeometrique.h"
-
+void ElementGeometrique::Translater(long deltaX, long deltaY)
+// Algorithme :
+//
+{
+}
 //------------------------------------------------------------- Constantes
 
 //----------------------------------------------------------------- PUBLIC
 
-//----------------------------------------------------- Méthodes publiques
-// type ElementGeometrique::Méthode ( liste des paramètres )
+//----------------------------------------------------- Mï¿½thodes publiques
+// type ElementGeometrique::Mï¿½thode ( liste des paramï¿½tres )
 // Algorithme :
 //
 //{
-//} //----- Fin de Méthode
+//} //----- Fin de Mï¿½thode
 
+//----- Fin de Mï¿½thode
 
-//------------------------------------------------- Surcharge d'opérateurs
+bool ElementGeometrique::Appartient(rectangle *selection )
+// Algorithme :
+//
+{
+} //----- Fin de Mï¿½thode
+
+//------------------------------------------------- Surcharge d'opï¿½rateurs
 ElementGeometrique & ElementGeometrique::operator = ( const ElementGeometrique & unElementGeometrique )
 // Algorithme :
 //
@@ -56,6 +68,16 @@ ElementGeometrique::ElementGeometrique ( )
 #endif
 } //----- Fin de ElementGeometrique
 
+ElementGeometrique::ElementGeometrique ( string commandeEntree)
+// Algorithme :
+//
+{
+#ifdef MAP
+    cout << "Appel au constructeur de <ElementGeometrique>" << endl;
+#endif
+    m_commandeEntree = commandeEntree;
+} //----- Fin de ElementGeometrique
+
 
 ElementGeometrique::~ElementGeometrique ( )
 // Algorithme :
@@ -69,5 +91,5 @@ ElementGeometrique::~ElementGeometrique ( )
 
 //------------------------------------------------------------------ PRIVE
 
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- Mï¿½thodes protï¿½gï¿½es
 
