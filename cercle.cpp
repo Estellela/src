@@ -51,7 +51,7 @@ void cercle::Translater(long deltaX, long deltaY)
 
 
 //-------------------------------------------- Constructeurs - destructeur
-cercle::cercle ( const cercle & uncercle )
+cercle::cercle ( const cercle & uncercle ) : ElementGeometrique(uncercle)
 // Algorithme :
 //
 {
@@ -62,16 +62,9 @@ cercle::cercle ( const cercle & uncercle )
 } //----- Fin de cercle (constructeur de copie)
 
 
-cercle::cercle ( )
-// Algorithme :
-//
-{
-#ifdef MAP
-    cout << "Appel au constructeur de <cercle>" << endl;
-#endif
-} //----- Fin de cercle
 
-cercle::cercle (unsigned long *radius, point *centre )
+
+cercle::cercle (string& commandeEntree,unsigned long *radius, point *centre ) : ElementGeometrique(commandeEntree)
 // Algorithme :
 //
 {

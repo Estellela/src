@@ -36,13 +36,13 @@ public:
     //
 
 
-    bool Appartient (rectangle *selection);
+    virtual bool Appartient (rectangle *selection);
     // Mode d'emploi :
     //
     // Contrat :
     //
 
-    void Translater(long deltaX,long deltaY);
+    virtual void Translater(long deltaX,long deltaY);
     // Mode d'emploi :
     //
     // Contrat :
@@ -66,13 +66,8 @@ cercle & operator = ( const cercle & uncercle );
     // Contrat :
     //
 
-    cercle ( );
-    // Mode d'emploi :
-    //
-    // Contrat :
-    //
 
-    cercle (unsigned long *radius, point *centre );
+    cercle (string& commandeEntree, unsigned long *radius, point *centre );
       // Mode d'emploi :
       //
       // Contrat :

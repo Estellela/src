@@ -114,29 +114,19 @@ rectangle & rectangle::operator = ( const rectangle & unrectangle )
 
 
 //-------------------------------------------- Constructeurs - destructeur
-rectangle::rectangle ( const rectangle & unrectangle )
+rectangle::rectangle ( const rectangle & unrectangle ) : ElementGeometrique(unrectangle)
 // Algorithme :
 //
 {
 #ifdef MAP
     cout << "Appel au constructeur de copie de <rectangle>" << endl;
 #endif
-   // m_pointA = unrectangle.m_pointA;
-//    m_pointB = unrectangle.m_pointB;
 
 } //----- Fin de rectangle (constructeur de copie)
 
 
-rectangle::rectangle ( )
-// Algorithme :
-//
-{
-#ifdef MAP
-    cout << "Appel au constructeur de <rectangle>" << endl;
-#endif
-} //----- Fin de rectangle
 
-rectangle::rectangle (point *a , point *b  )
+rectangle::rectangle (string commandeEntree, point *a , point *b  ) : ElementGeometrique(commandeEntree)
 // Algorithme :
 //
 {

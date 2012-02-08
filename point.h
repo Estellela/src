@@ -73,12 +73,6 @@ public:
     // Contrat :
     //
 
-    point ();
-       // Mode d'emploi :
-       //
-       // Contrat :
-       //
-
 
     point (long x1, long y1 );
     // Mode d'emploi :

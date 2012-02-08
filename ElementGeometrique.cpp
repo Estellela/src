@@ -59,14 +59,6 @@ ElementGeometrique::ElementGeometrique ( const ElementGeometrique & unElementGeo
 } //----- Fin de ElementGeometrique (constructeur de copie)
 
 
-ElementGeometrique::ElementGeometrique ( )
-// Algorithme :
-//
-{
-#ifdef MAP
-    cout << "Appel au constructeur de <ElementGeometrique>" << endl;
-#endif
-} //----- Fin de ElementGeometrique
 
 ElementGeometrique::ElementGeometrique ( string commandeEntree)
 // Algorithme :

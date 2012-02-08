@@ -11,7 +11,7 @@
 
 //--------------------------------------------------- Interfaces utilis�es
 #include <string>
-#include"rectangle.h"
+class rectangle;
 //------------------------------------------------------------- Constantes 
 
 //------------------------------------------------------------------ Types 
@@ -64,11 +64,12 @@ public:
     // Contrat :
     //
 
-    ElementGeometrique ( );
+    ElementGeometrique (string commandeEntree );
     // Mode d'emploi :
     //
     // Contrat :
     //
+
 
 
     virtual ~ElementGeometrique ( );

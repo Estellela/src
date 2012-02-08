@@ -34,13 +34,13 @@ public:
     // Contrat :
     //
 
-	virtual point GetPointA( );
+	point GetPointA( );
 	// Mode d'emploi :
 	//
 	// Contrat :
 	//
 
-	virtual point GetPointB( );
+	point GetPointB( );
 	// Mode d'emploi :
 	//
 	// Contrat :
@@ -73,13 +73,7 @@ public:
     // Contrat :
     //
 
-    rectangle ( );
-    // Mode d'emploi :
-    //
-    // Contrat :
-    //
-
-    rectangle (point *a, point *b );
+    rectangle (string commandeEntree, point *a, point *b );
     // Mode d'emploi :
     //
     // Contrat :

@@ -87,16 +87,6 @@ point::point ( long x1, long y1 )
 
 } //----- Fin de point
 
-point::point ()
-// Algorithme :
-//
-{
-#ifdef MAP
-    cout << "Appel au constructeur de <point>" << endl;
-#endif
-} //----- Fin de point
-
-
 
 
 point::~point ( )

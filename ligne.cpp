@@ -97,7 +97,7 @@ ligne & ligne::operator = ( const ligne & unligne )
 
 
 //-------------------------------------------- Constructeurs - destructeur
-ligne::ligne ( const ligne & unligne )
+ligne::ligne ( const ligne & unligne ) : ElementGeometrique(unligne)
 // Algorithme :
 //
 {
@@ -107,17 +107,8 @@ ligne::ligne ( const ligne & unligne )
 } //----- Fin de ligne (constructeur de copie)
 
 
-ligne::ligne ( )
-// Algorithme :
-//
-{
-#ifdef MAP
-    cout << "Appel au constructeur de <ligne>" << endl;
-#endif
-} //----- Fin de ligne
 
-
-ligne::ligne (point *pointA,point *pointB)
+ligne::ligne (string commandeEntree, point *pointA,point *pointB) : ElementGeometrique(commandeEntree)
 // Algorithme :
 //
 {

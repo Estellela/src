@@ -63,14 +63,7 @@ public:
     // Contrat :
     //
 
-    ligne();
-       // Mode d'emploi :
-       //
-       //Contrat :
-       //
-
-
-    ligne(point *pointA, point *pointB);
+    ligne(string commandeEntree, point *pointA, point *pointB);
     // Mode d'emploi :
     //
     //Contrat :
