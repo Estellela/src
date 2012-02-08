@@ -62,13 +62,7 @@ public:
     // Contrat :
     //
 
-    polyligne ( );
-    // Mode d'emploi :
-    //
-    // Contrat :
-    //
-
-    polyligne (list<point> *listeDesPoints);
+    polyligne (string commandeEntree, list<point> *listeDesPoints);
 	// Mode d'emploi :
 	//
 	// Contrat :

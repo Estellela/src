@@ -27,11 +27,12 @@ using namespace std;
 //
 //{
 //} //----- Fin de Méthode
-//void polyligne::Translater(long deltaX, long deltaY)
+void polyligne::Translater(long deltaX, long deltaY)
 // Algorithme :
 //
-//{
-//}
+{
+}
+
 
 //------------------------------------------------- Surcharge d'opérateurs
 polyligne & polyligne::operator = ( const polyligne & unpolyligne )
@@ -52,16 +53,8 @@ polyligne::polyligne ( const polyligne & unpolyligne ) : ElementGeometrique(unpo
 } //----- Fin de polyligne (constructeur de copie)
 
 
-polyligne::polyligne ( ) : ElementGeometrique()
-// Algorithme :
-//
-{
-#ifdef MAP
-    cout << "Appel au constructeur de <polyligne>" << endl;
-#endif
-} //----- Fin de polyligne
 
-polyligne::polyligne (list<point> *listeDesPoints)
+polyligne::polyligne (string commandeEntree, list<point> *listeDesPoints) : ElementGeometrique(commandeEntree)
 // Algorithme :
 //
 {
